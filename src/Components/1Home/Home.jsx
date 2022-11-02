@@ -8,24 +8,7 @@ const Home = () => {
   return (
     <div>
         <div id="Home">
-        <Particles
-        params={{
-          fpsLimit: 60,
-          particles: {
-            color: {
-              value: "#000"
-            },
-            links: {
-              enable: true,
-              color: "#000",
-              distance: 150
-            },
-            move: {
-              enable: true
-            }
-          }
-        }}
-      />
+
             <motion.div className="card" initial={{x:-1000}} animate={{x:0}} transition={{duration:1,type:"spring",stiffness:50}}>
                 <div className="text">
                     <h1>Hello, We're Grevelops.</h1>
