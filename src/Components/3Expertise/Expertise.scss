@@ -1,0 +1,130 @@
+@import "../../Styles/variables";
+#Expertise{
+    background-color: $backgroundColor;
+    .upper{
+        display: flex;
+        padding-top: 3rem;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+        img{
+            border-radius: 50%;
+            width: 61px;
+            height: 60px;
+        }
+        h2{
+            padding-top: 1rem;
+            color: $textGrey;
+            font-weight: bold;
+            font-size: .7rem;
+        }
+        h1{
+            padding-top: .5rem;
+            font-size: 1.8rem;
+        }
+        p{
+            text-align: center;
+            padding: 0rem 1rem;
+            font-size: .9rem;
+            padding-top: .4rem;
+            color: $lightColorText;
+        }
+    }
+    .cards{
+        padding-bottom: 10rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+        width: 75vw;
+        .card{
+            margin: 1rem;
+            background-color: $colorWhite;
+            width: 300px;
+            padding: 1rem;
+            border-radius: .3rem;
+            box-shadow: 0px 0px 10px 0px #8796b438;
+            transition: .3s all ease-in-out;
+            h2{
+                font-size: 1rem;
+                font-weight: 900;
+                padding-top: 1rem;
+            }
+            p{
+                font-size: .8rem;
+                padding-top: .5rem;
+                line-height: 1.2rem;
+                color: $lightColorText;
+                padding-bottom: 2rem;
+            }
+            .i{
+                display: flex;
+                align-items: center;
+                .ia{
+                    height: 1px;
+                    width: 20px;
+                }
+                .ib{
+                    transition: .3s ease-in-out all;
+                    height: 1px;
+                    width: 80px;
+                }
+            }
+            .iconBox{
+                width: 50px;
+                border-radius: .5rem;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .icon{
+                    font-size: 1.8rem;
+                    fill: $colorWhite;
+                }
+            }
+            .i1{
+                background-image: linear-gradient(131deg, #5956fd, #2fb9f8);
+            }
+            .i2{
+                background-image: linear-gradient(135deg, #ff5e00, #ffae00);
+            }
+            .i3{
+                background-image: linear-gradient(124deg, #b90dc5, #d656fd);
+
+            }
+            .i4{
+                background-image: linear-gradient(127deg, #2fb9f8, #0df);
+            }
+            .i5{
+                background-image: linear-gradient(120deg, #8325e7, #5956fd);
+            }
+         
+            &:hover{
+                box-shadow: -10px 10px 10px 0px #8796b45d;
+                .ib{
+                    width: 150px;
+                }
+            }
+        }
+    }
+}
+//? ####################### Responsivenes ##############################
+@media(max-width:860px){
+    #Expertise{
+        .cards{
+            .card{
+                width: 100%;
+            }
+        }
+    }
+}
+@media(max-width:400px){
+    #Expertise{
+        .cards{
+            width: 100vw;
+            .card{
+                width: 100%;
+            }
+        }
+    }
+}

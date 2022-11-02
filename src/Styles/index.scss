@@ -1,0 +1,14 @@
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import "./variables";
+*,*::after,*::before{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+// font-size: 62.5%;
+color: $textblack;
+scroll-behavior: smooth;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+// font-family: 'Roboto', sans-serif;
+font-family: Rubik,-apple-system,system-ui,BlinkMacSystemFont,segoe ui,Roboto,Oxygen-Sans,Ubuntu,Cantarell,helvetica neue,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+}
