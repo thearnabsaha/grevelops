@@ -12,3 +12,20 @@ scroll-behavior: smooth;
 // font-family: 'Roboto', sans-serif;
 font-family: Rubik,-apple-system,system-ui,BlinkMacSystemFont,segoe ui,Roboto,Oxygen-Sans,Ubuntu,Cantarell,helvetica neue,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
 }
+#preloader{
+    background-color: #101731;
+    position: fixed;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        width: 150px;
+        height: 150px;
+    }
+}
+#preloader-none{
+    display: none;
+}

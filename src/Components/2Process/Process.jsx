@@ -1,7 +1,67 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import logo from '../../Assets/logo.png'
 import "./Process.scss"
+import { useAnimation,motion} from "framer-motion";
+import { useInView } from 'react-intersection-observer';
 const Process = () => {
+    const { ref, inView } = useInView({threshold:0.2 });
+    const animation=useAnimation()
+    const animation2=useAnimation()
+    const animation3=useAnimation()
+    const animation4=useAnimation()
+    const animation5=useAnimation()
+    const animation6=useAnimation()
+    const animation7=useAnimation()
+    useEffect(() => {
+        if(!inView){
+            animation.start({
+            x:-300,scale:1,opacity:0,transition:{duration:.1}
+            })
+            animation2.start({
+            x:200,scale:1,opacity:0,transition:{duration:.1}
+            })
+            animation3.start({
+                y:100,scale:0,opacity:0
+            })
+            animation4.start({
+                y:100,scale:0,opacity:0
+            })
+            animation5.start({
+                y:100,scale:0,opacity:0
+            })
+            animation6.start({
+                y:100,scale:0,opacity:0
+            })
+            animation7.start({
+                y:100,scale:0,opacity:0
+            })
+        }
+        if(inView){
+            animation.start({
+            x:0,scale:1,opacity:1,transition:{duration:.1}
+            })
+            animation2.start({
+            x:0,scale:1,opacity:1,transition:{duration:.1}
+            })
+            animation3.start({
+                y:0,scale:1,opacity:1,transition:{duration:.2}
+            })
+            animation4.start({
+                y:0,scale:1,opacity:1,transition:{duration:.4}
+            })
+            animation5.start({
+                y:0,scale:1,opacity:1,transition:{duration:.6}
+            })
+            animation6.start({
+                y:0,scale:1,opacity:1,transition:{duration:.8}
+            })
+            animation7.start({
+                y:0,scale:1,opacity:1,transition:{duration:1.0}
+            })
+        }
+      console.log("hi",inView);
+    },[inView])
+    
   return (
     <div>
         <div id="Process">
@@ -10,83 +70,83 @@ const Process = () => {
                 <p>WE WORK HARD TO MAKE IT REAL!</p>
                 <h1>Our Work Process</h1>
             </div>
-            <div className="cards">
+            <div className="cards" ref={ref}>
                 <div className="row">
-                    <div className="textCarde">
+                    <motion.div className="textCarde" animate={animation} ref={ref}>
                         <h2>Research</h2>
                         <p>At the first step, we select the tools and the technologies, setup the base architecture, and focus on the core offerings</p>
-                    </div>
+                    </motion.div>
                     <div className="l1"></div>
                     <div className="i1"></div>
                     <div className="h"></div>
                     <div className="l2"></div>
-                    <div className="imgCard"><img src={logo} alt="" /></div>
+                    <motion.div className="imgCard" animate={animation2} ref={ref} ><img src={logo} alt="" /></motion.div>
                 </div>
                 <div className="row">
-                    <div className="imgCard"><img src={logo} alt="" /></div>
+                    <motion.div className="imgCard"  animate={animation} ref={ref}><img src={logo} alt="" /></motion.div>
                     <div className="l1"></div>
                     <div className="i2"></div>
                     <div className="h"></div>
                     <div className="l2"></div>
-                    <div className="textCards">
+                    <motion.div className="textCards" animate={animation2} ref={ref}>
                         <h2>Design & Develop</h2>
                         <p>We then build the rich features of the application, and implement automated testing and deployment</p>
-                    </div>
+                    </motion.div>
                 </div>
                 <div className="row">
-                    <div className="textCarde">
+                    <motion.div className="textCarde" animate={animation} ref={ref}>
                         <h2>Improve & Scale</h2>
                         <p>After the initial development phase, we optimise the application to manage for scale, and use the latest technological trends to lower operational costs.</p>
-                    </div>
+                    </motion.div>
                     <div className="l1"></div>
                     <div className="i3"></div>
                     <div className="h"></div>
                     <div className="l2"></div>
-                    <div className="imgCard"><img src={logo} alt="" /></div>
+                    <motion.div className="imgCard" animate={animation2} ref={ref}><img src={logo} alt="" /></motion.div>
                 </div>
                 <div className="row">
-                    <div className="imgCard"><img src={logo} alt="" /></div>
+                    <motion.div className="imgCard" animate={animation} ref={ref}><img src={logo} alt="" /></motion.div>
                     <div className="l1"></div>
                     <div className="i4"></div>
                     <div className="h"></div>
                     <div className="l2"></div>
-                    <div className="textCards">
+                    <motion.div className="textCards" animate={animation2} ref={ref}>
                         <h2>Support</h2>
                         <p>Finally, we monitor the application and provide insights, along with third line development support to ensure the product functions seamlessly during its lifetime.</p>
-                    </div>
+                    </motion.div>
                 </div>
                 <div className="column">
                     <div className="cRow">
                         <div className="i1"></div>
                         <div className="h"></div>
-                        <div className="textCard">
+                        <motion.div className="textCard" animate={animation3} ref={ref}>
                             <h2>Research</h2>
                             <p>At the first step, we select the tools and the technologies, setup the base architecture, and focus on the core offerings</p>
-                        </div>
+                        </motion.div>
                     </div>
                     <div className="cRow">
                         <div className="i2"></div>
                         <div className="h"></div>
-                        <div className="textCard">
+                        <motion.div className="textCard" animate={animation4} ref={ref}>
                             <h2>Design & Develop</h2>
                             <p>We then build the rich features of the application, and implement automated testing and deployment</p>
-                        </div>
+                        </motion.div>
                     </div>
                     <div className="cRow">
                         <div className="i3"></div>
                         <div className="h"></div>
-                        <div className="textCard">
+                        <motion.div className="textCard" animate={animation5} ref={ref}>
                             <h2>Improve & Scale</h2>
                             <p>After the initial development phase, we optimise the application to manage for scale, and use the latest technological trends to lower operational costs.</p>
-                        </div>
+                        </motion.div>
                     </div>
                     <div className="cRow">
                         <div className="i4"></div>
                         <div className="h"></div>
-                        <div className="textCard">
+                        <motion.div className="textCard" animate={animation6} ref={ref}>
                             <h2>Support</h2>
                             <p>Finally, we monitor the application and provide insights, along with third line development support to ensure the product functions seamlessly during its lifetime.</p>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </div>
