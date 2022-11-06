@@ -16,6 +16,7 @@
         // border: 1px solid red;
         display: flex;
         margin-bottom: 4rem;
+        text-align: center;
         .write{
             border-right: 1px solid $lightColorText;
             border-left: 1px solid $lightColorText;
@@ -26,11 +27,12 @@
             text-align: center;
             padding: 0rem 7rem;
         }
-        p{
+        a{
             color: $lightColorText;
             text-align: center;
             font-size: .8rem;
             padding-top: .4rem;
+            text-decoration: none;
         }
         .socials{
             margin: 0rem 3rem;

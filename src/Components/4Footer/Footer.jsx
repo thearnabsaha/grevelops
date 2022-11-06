@@ -29,21 +29,21 @@ const Footer = () => {
                     <h1>Ready To Start Your Project?</h1>
                     <p>Whether it's for design, development, support, server, remote work, or whatever, Grevelops is in the business of delivering the best results. Because otherwise, what's the point? Give us a call or drop us a line and we'd love to talk with you about your requirement.</p>
                 </div>
-                <a href="#">Get In Touch</a>
+                <a href="https://api.whatsapp.com/send?phone=916296818891">Get In Touch</a>
             </motion.div>
             <img src={logo} alt="" />
             <div className="upper">
                 <div className="call">
                     <h1>CALL US</h1>
-                    <p>Phone. +91 6296818891</p>
+                    <a href="tel:6296818891">Phone. +91 6296818891</a>
                 </div>
                 <div className="write">
                     <h1>WRITE US</h1>
-                    <p>Email: arnab@grevelops.co</p>
+                    <a href="mailto:your@email.com?subject=Hello%20Arnab!">Email: arnab@grevelops.co</a>
                 </div>
                 <div className="socials">
                     <a href="#"><IoLogoLinkedin className='icon'/></a>
-                    <a href="#"><IoLogoInstagram className='icon'/></a>
+                    <a href="https://www.instagram.com/grevelops/"><IoLogoInstagram className='icon'/></a>
                 </div>
             </div>
             <div className="lower">

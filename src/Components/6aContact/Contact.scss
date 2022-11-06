@@ -1,0 +1,186 @@
+@import "../../Styles/variables";
+#Contact{
+    background-color: $backgroundColor;
+    .container{
+        .cards{
+            padding-bottom: 10rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: auto;
+            width: 75vw;
+            .carda{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .icona{
+                    margin-top: 1rem;
+                    fill: $textGrey;
+                    font-size: 2rem;
+                    &:hover{
+                        fill: $backgroundColorDark;
+                    }
+                }
+            }
+            .card{
+                margin: 1rem;
+                background-color: $colorWhite;
+                width: 300px;
+                padding: 1rem;
+                border-radius: .3rem;
+                box-shadow: 0px 0px 10px 0px #8796b438;
+                transition: .3s all ease-in-out;
+                h3{
+                    text-align: center;
+                    padding-top: 1rem;
+                    font-size: .8rem;
+                    color: $textGrey;
+                }
+                p{
+                    text-align: center;
+                    padding-top: 1rem;
+                    font-size: .8rem;
+                    color: $lightColorText;
+                    a{
+                        text-decoration: none;
+                        color: $lightColorText;
+                        border-bottom: 1px solid $lightColorText;
+                    }
+                }
+                &:hover{
+                box-shadow: -10px 10px 10px 0px #8796b45d;
+                    .l1{
+                transition: .3s all ease-in-out;
+
+                        width: 25% !important;
+                    }
+                    .l2{
+                transition: .3s all ease-in-out;
+
+                        width: 25% !important;
+                    }
+                    .l3{
+                transition: .3s all ease-in-out;
+
+                        width: 25% !important;
+                    }
+                    .l4{
+                transition: .3s all ease-in-out;
+
+                        width: 25% !important;
+                    }
+                    .l5{
+                transition: .3s all ease-in-out;
+
+                        width: 75px !important;
+                    }
+                    .l6{
+                transition: .3s all ease-in-out;
+
+                        width: 75px !important;
+                    }
+                }
+                .imgw{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+                    .l1{
+                        background-image: linear-gradient(131deg, #5956fd, #2fb9f8);
+                        height: 1px;
+                        width: 15%;
+                transition: .3s all ease-in-out;
+
+                    }
+                    .l2{
+                        background-image: linear-gradient(131deg, #5956fd, #2fb9f8);
+                        
+                        height: 1px;
+                        width: 15%;
+                        transition: .3s all ease-in-out;
+                    }
+                    .l3{
+                background-image: linear-gradient(135deg, #ff5e00, #ffae00);
+
+                        height: 1px;
+                        width: 15%;
+                transition: .3s all ease-in-out;
+
+                    }
+                    .l4{
+                background-image: linear-gradient(135deg, #ff5e00, #ffae00);
+
+                        height: 1px;
+                        width: 15%;
+                        transition: .3s all ease-in-out;
+                    }
+                    .l5{
+                background-image: linear-gradient(124deg, #b90dc5, #d656fd);
+
+                        height: 1px;
+                        width: 40px;
+                transition: .3s all ease-in-out;
+
+                    }
+                    .l6{
+                background-image: linear-gradient(124deg, #b90dc5, #d656fd);
+
+                        height: 1px;
+                        width: 40px;
+                        transition: .3s all ease-in-out;
+                    }
+                    .imgBox1{
+                background-image: linear-gradient(131deg, #5956fd, #2fb9f8);
+                        padding: .5rem;
+                        border-radius: .2rem;
+                        .icon{
+                            font-size: 1.5rem;
+                            fill: $colorWhite;
+                        }
+                    }
+                    .imgBox2{
+                background-image: linear-gradient(135deg, #ff5e00, #ffae00);
+
+                        padding: .5rem;
+                        border-radius: .2rem;
+                        .icon{
+                            font-size: 1.5rem;
+                            fill: $colorWhite;
+                        }
+                    }
+                    .imgBox3{
+                background-image: linear-gradient(124deg, #b90dc5, #d656fd);
+
+                        padding: .5rem;
+                        border-radius: .2rem;
+                        .icon{
+                            font-size: 1.5rem;
+                            fill: $colorWhite;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:880px){
+    .container{
+        .cards{
+            .card{
+                width: 100% !important;
+            }
+        }
+    }
+}
+@media(max-width:400px){
+    .container{
+        .cards{
+            padding: 0;
+            width: 100% !important;
+            .card{
+                width: 100% !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,111 @@
+@import "../../Styles/variables";
+
+#Faq{
+    padding-top: 5rem;
+    background-color: $backgroundColor;
+    .container{
+        width: 80vw;
+        margin: auto;
+        overflow-y: auto;
+        padding-bottom: 5rem;
+        h3{
+            text-align: center;
+            padding-bottom: .5rem;
+            font-size: .8rem;
+        }
+        h1{
+            text-align: center;
+            font-size: 1.4rem;
+            padding-bottom: 1rem;
+        }
+        .box{
+            display: flex;
+            justify-content: space-around;
+            .left{
+                .c{
+                    color: $colorWhite;
+                    font-size: .8rem;
+                }
+                .cd{
+                    font-size: .8rem;
+                    color: $lightColorText;
+                }
+                width: 45%;
+                .up{
+                    background-color: $backgroundColorDark;
+                    margin-bottom: 1rem;
+                    .i{
+                        fill: #fff !important;
+                    }
+                    .s{
+                        height: 70px;
+                    }
+                }
+                .down{
+                    .i{
+                        fill: #fff !important;
+                    }
+                    background-color: $backgroundColorDark;
+                    .s{
+                        height: 70px;
+                    }
+                }
+            }
+            .right{
+                .c{
+                    color: #fff;
+                    font-size: .8rem;
+                }
+                .cd{
+                    font-size: .8rem;
+                    color: $lightColorText;
+                }
+                width: 45%;
+                .up{
+                    background-color: $backgroundColorDark;
+                    margin-bottom: 1rem;
+                    .s{
+                        height: 70px;
+                    }
+                    .i{
+                        fill: #fff !important;
+                    }
+                }
+                .down{
+                    background-color: $backgroundColorDark;
+                    .s{
+                        height: 70px;
+                    }
+                    .i{
+                        fill: #fff !important;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:1000px){
+    #Faq{
+        .container{
+            .box{
+                flex-direction: column;
+                .left{
+                    width: 100%;
+                    margin-bottom: 1rem;
+                }
+                .right{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+@media(max-width:400px){
+    #Faq{
+        .container{
+            h3{
+                font-size: .7rem;
+            }
+        }
+    }
+}

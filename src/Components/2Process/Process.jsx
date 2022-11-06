@@ -1,5 +1,9 @@
 import React,{useEffect} from 'react'
 import logo from '../../Assets/logo.png'
+import a from '../../Assets/a.jpg'
+import b from '../../Assets/b.jpg'
+import c from '../../Assets/c.jpg'
+import d from '../../Assets/d.jpg'
 import "./Process.scss"
 import { useAnimation,motion} from "framer-motion";
 import { useInView } from 'react-intersection-observer';
@@ -15,10 +19,10 @@ const Process = () => {
     useEffect(() => {
         if(!inView){
             animation.start({
-            x:-300,scale:1,opacity:0,transition:{duration:.1}
+            y:200,scale:0,opacity:0,transition:{duration:.1}
             })
             animation2.start({
-            x:200,scale:1,opacity:0,transition:{duration:.1}
+            y:200,scale:0,opacity:0,transition:{duration:.1}
             })
             animation3.start({
                 y:100,scale:0,opacity:0
@@ -38,10 +42,10 @@ const Process = () => {
         }
         if(inView){
             animation.start({
-            x:0,scale:1,opacity:1,transition:{duration:.1}
+            y:0,scale:1,opacity:1,transition:{duration:.1}
             })
             animation2.start({
-            x:0,scale:1,opacity:1,transition:{duration:.1}
+            y:0,scale:1,opacity:1,transition:{duration:.1}
             })
             animation3.start({
                 y:0,scale:1,opacity:1,transition:{duration:.2}
@@ -80,10 +84,10 @@ const Process = () => {
                     <div className="i1"></div>
                     <div className="h"></div>
                     <div className="l2"></div>
-                    <motion.div className="imgCard" animate={animation2} ref={ref} ><img src={logo} alt="" /></motion.div>
+                    <motion.div className="imgCard" animate={animation2} ref={ref} ><img src={d} alt="" /></motion.div>
                 </div>
                 <div className="row">
-                    <motion.div className="imgCard"  animate={animation} ref={ref}><img src={logo} alt="" /></motion.div>
+                    <motion.div className="imgCard"  animate={animation} ref={ref}><img src={b} alt="" /></motion.div>
                     <div className="l1"></div>
                     <div className="i2"></div>
                     <div className="h"></div>
@@ -102,10 +106,10 @@ const Process = () => {
                     <div className="i3"></div>
                     <div className="h"></div>
                     <div className="l2"></div>
-                    <motion.div className="imgCard" animate={animation2} ref={ref}><img src={logo} alt="" /></motion.div>
+                    <motion.div className="imgCard" animate={animation2} ref={ref}><img src={a} alt="" /></motion.div>
                 </div>
                 <div className="row">
-                    <motion.div className="imgCard" animate={animation} ref={ref}><img src={logo} alt="" /></motion.div>
+                    <motion.div className="imgCard" animate={animation} ref={ref}><img src={c} alt="" /></motion.div>
                     <div className="l1"></div>
                     <div className="i4"></div>
                     <div className="h"></div>
