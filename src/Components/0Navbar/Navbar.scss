@@ -120,13 +120,13 @@
     width: 70%;
     height: 100%;
     background-color: $colorWhite;
-    // opacity: 95%;
     opacity: 100%;
     .logo{
+        padding-bottom: 10rem;
         display: flex;
         align-items: center;
         margin-top: 1rem;
-        margin-left: 1rem;
+        margin-bottom: 1rem;
         img{
             width: 50px;
             height: 45px;
@@ -139,7 +139,6 @@
     .linkas{
         display: flex;
         flex-direction: column;
-        // padding-top: 3rem;
         padding-left: 2rem;
         .link{
             padding-top: 1.5rem;

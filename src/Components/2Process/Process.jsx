@@ -7,6 +7,7 @@ import d from '../../Assets/d.jpg'
 import "./Process.scss"
 import { useAnimation,motion} from "framer-motion";
 import { useInView } from 'react-intersection-observer';
+import Fade from 'react-reveal/Fade';
 const Process = () => {
     const { ref, inView } = useInView({threshold:0.2 });
     const animation=useAnimation()
@@ -151,6 +152,101 @@ const Process = () => {
                             <h2>Support</h2>
                             <p>Finally, we monitor the application and provide insights, along with third line development support to ensure the product functions seamlessly during its lifetime.</p>
                         </motion.div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Processm">
+            <div className="upper">
+                <img src={logo} alt="" />
+                <p>WE WORK HARD TO MAKE IT REAL!</p>
+                <h1>Our Work Process</h1>
+            </div>
+            <div className="cards">
+                <div className="row">
+                <Fade left><div className="textCarde">
+                        <h2>Research</h2>
+                        <p>At the first step, we select the tools and the technologies, setup the base architecture, and focus on the core offerings</p>
+                    </div></Fade>
+                    <div className="l1"></div>
+                    <div className="i1"></div>
+                    <div className="h"></div>
+                    <div className="l2"></div>
+                    
+                    <Fade right><div className="imgCard"><img src={d} alt="" /></div></Fade>
+                </div>
+                <div className="row">
+                    <Fade left><div className="imgCard"><img src={b} alt="" /></div></Fade>
+                    <div className="l1"></div>
+                    <div className="i2"></div>
+                    <div className="h"></div>
+                    <div className="l2"></div>
+                    <Fade right><div className="textCards">
+                        <h2>Design & Develop</h2>
+                        <p>We then build the rich features of the application, and implement automated testing and deployment</p>
+                    </div></Fade>
+                </div>
+                <div className="row">
+                <Fade left><div className="textCarde">
+                        <h2>Improve & Scale</h2>
+                        <p>After the initial development phase, we optimise the application to manage for scale, and use the latest technological trends to lower operational costs.</p>
+                    </div></Fade>
+                    
+                    <div className="l1"></div>
+                    <div className="i3"></div>
+                    <div className="h"></div>
+                    <div className="l2"></div>
+                <Fade right><div className="imgCard" ><img src={a} alt="" /></div></Fade>
+
+                    
+                </div>
+                <div className="row">
+                <Fade left><div className="imgCard"><img src={c} alt="" /></div></Fade>
+
+                    
+                    <div className="l1"></div>
+                    <div className="i4"></div>
+                    <div className="h"></div>
+                    <div className="l2"></div>
+                <Fade right><div className="textCards">
+                        <h2>Support</h2>
+                        <p>Finally, we monitor the application and provide insights, along with third line development support to ensure the product functions seamlessly during its lifetime.</p>
+                    </div></Fade>
+
+                    
+                </div>
+                <div className="column">
+                    <div className="cRow">
+                        <div className="i1"></div>
+                        <div className="h"></div>
+                        <div className="textCard">
+                            <h2>Research</h2>
+                            <p>At the first step, we select the tools and the technologies, setup the base architecture, and focus on the core offerings</p>
+                        </div>
+                    </div>
+                    <div className="cRow">
+                        <div className="i2"></div>
+                        <div className="h"></div>
+                        <div className="textCard">
+                            <h2>Design & Develop</h2>
+                            <p>We then build the rich features of the application, and implement automated testing and deployment</p>
+                        </div>
+                    </div>
+                    <div className="cRow">
+                        <div className="i3"></div>
+                        <div className="h"></div>
+                        <div className="textCard">
+                            <h2>Improve & Scale</h2>
+                            <p>After the initial development phase, we optimise the application to manage for scale, and use the latest technological trends to lower operational costs.</p>
+                        </div>
+                    </div>
+                    <div className="cRow">
+                        <div className="i4"></div>
+                        <div className="h"></div>
+                        <div className="textCard">
+                            <h2>Support</h2>
+                            <p>Finally, we monitor the application and provide insights, along with third line development support to ensure the product functions seamlessly during its lifetime.</p>
+                        </div>
                     </div>
                 </div>
             </div>

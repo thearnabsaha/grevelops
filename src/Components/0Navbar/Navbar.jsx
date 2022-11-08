@@ -1,4 +1,4 @@
-import React,{useState}from 'react'
+import React,{useState,useRef,useEffect}from 'react'
 import {Link} from 'react-router-dom'
 import logo from '../../Assets/logo.png'
 import "./Navbar.scss"
@@ -13,14 +13,9 @@ const Navbar = () => {
       setSticky(true)
     }
   }
-  console.log(open);
   window.addEventListener("scroll",change);
   const addClass=()=>{
     setOpen(!open)
-  }
-  const handleBlur=()=>{
-    // setOpen(false)
-    console.log("Pokeomon");
   }
   return (
     <div className='a'>
@@ -29,6 +24,7 @@ const Navbar = () => {
               <img src={logo} alt="" />
               <h1>Grevelops</h1>
           </div>
+          <hr />
           <div className="linkas">
             <Link to="/" className='link'>Home</Link>
             <Link to="/portfolio" className='link'>Portfolio</Link>
@@ -47,7 +43,7 @@ const Navbar = () => {
                 <Link to="/portfolio" className='link'>Portfolio</Link>
                 <Link to="/about" className='link'>About Us</Link>
                 <Link to="/contact" className='link contact'>Contact Us</Link>
-                <div className="iconBox" onClick={addClass}>
+                <div className="iconBox" onClick={addClass} >
                   <GoThreeBars className='icon'/>
                 </div>
             </div>
