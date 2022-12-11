@@ -1,0 +1,55 @@
+@import "../../Styles/variables";
+
+#Projects{
+    background-color: $backgroundColor;
+    .container{
+        width: 80vw;
+        margin: auto;
+        padding-bottom: 4rem;
+        .cards{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .card{
+                width: 400px;
+                margin: 2rem;
+                img{
+                    height: 250px;
+                    border-radius: .6rem;
+                    width: 400px;
+                }
+                h1{
+                    font-size: 1.3rem;
+                    color: $textblack;
+                    padding-left: .3rem;
+                    padding-top: .5rem;
+                }
+                p{
+                    padding-top: .5rem;
+                    padding-left: .3rem;
+                    font-size: .8rem;
+                    color: $lightColorText;
+                    font-weight: 600;
+                }
+                button{
+                    background-color: $primaryColor;
+                    padding: .5rem 1rem;
+                    border-radius: .3rem;
+                    margin-top: .5rem;
+                    border: none;
+                    outline: none;
+                    transition: all .3s ease-in-out;
+                    margin-left: .3rem;
+                    &:hover{
+                        background-color: #0462a9;
+
+                    }
+                    .link{
+                        color: $colorWhite;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}

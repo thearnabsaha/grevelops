@@ -18,7 +18,6 @@ const Footer = () => {
         y:-80,scale:1,opacity:1,transition:{duration:.4}
         })
     }
-    console.log("hi",inView);
     },[inView])
     
   return (

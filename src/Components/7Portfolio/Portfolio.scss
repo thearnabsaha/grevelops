@@ -1,0 +1,25 @@
+@import "../../Styles/variables";
+#Portfolio{
+    background-color: $backgroundColor;
+    .container{
+        width: 70vw;
+        margin: auto;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        .links{
+            font-size: 1.5rem;
+            background: linear-gradient(67deg, rgba(9,132,227,1) 0%, rgba(51,153,232,1) 41%, rgba(98,177,237,1) 100%, rgba(176,216,246,1) 100%, rgba(255,255,255,1) 100%);
+            padding: 1rem;
+            border-radius: .6rem;
+            .link{
+                text-decoration: none;
+                padding: 1rem;
+                color: $colorWhite;
+                &:hover{
+                    border-bottom: 2px solid $colorWhite;
+                    padding-bottom: .5rem;
+                }
+            }
+        }
+    }
+}

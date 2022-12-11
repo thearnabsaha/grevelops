@@ -4,7 +4,6 @@
 margin: 0;
 padding: 0;
 box-sizing: border-box;
-// font-size: 62.5%;
 color: $textblack;
 scroll-behavior: smooth;
 -webkit-font-smoothing: antialiased;
@@ -28,4 +27,81 @@ font-family: Rubik,-apple-system,system-ui,BlinkMacSystemFont,segoe ui,Roboto,Ox
 }
 #preloader-none{
     display: none;
+}
+#pp{
+    // border: 1px solid red;
+    #ProjectReview{
+        .container{
+            height: 100vh;
+            padding-top: 8rem;
+            width: 70vw;
+            margin: auto;
+            h1{
+                font-size: 2rem;
+                color: $primaryColor;
+            }
+            .box{
+                margin-top: 1rem;
+                display: flex;
+                justify-content: space-between;
+                .imgBox{
+                    img{
+                        width: 600px;
+                        border-radius: 1rem;
+                    }
+                }
+                .smBox{
+                    width: 250px;
+                    .about{
+                        border-radius: .5rem;
+                        padding: 1rem;
+                        box-shadow: 0px 0px 10px 0px rgba(170, 170, 170, 0.549);
+                        &:hover{
+                            box-shadow: -10px 10px 10px 0px rgba(170, 170, 170, 0.649);
+                        }
+                        h2{
+                            color: $textGrey;
+                            padding-bottom: .5rem;
+                        }
+                        p{
+                            color: $textGrey;
+                            font-weight: 600;
+                            font-size: .8rem;
+                            padding-top: .5rem;
+                        }
+                    }
+                    .technology{
+                        margin-top: 2rem;
+                        padding: 1rem;
+                        border-radius: .5rem;
+                        box-shadow: 0px 0px 10px 0px rgba(170, 170, 170, 0.549);
+                        h2{
+                            color: $textGrey;
+                            padding-bottom: .5rem;
+                        }
+                        ul{
+                            list-style: none;
+                        }
+                        margin-bottom: 2rem;
+                        &:hover{
+                            box-shadow: -10px 10px 10px 0px rgba(170, 170, 170, 0.649);
+                        }
+                    }
+                    
+                    a{
+                        border-radius: .5rem;
+                        padding: 1rem 4.9rem;
+                        background-color: $primaryColor;
+                        text-decoration: none;
+                        color: $colorWhite;
+                        cursor: pointer;
+                        &:hover{
+                            background-color: #066cb9;
+                            box-shadow: -10px 10px 10px 0px rgba(170, 170, 170, 0.449);
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

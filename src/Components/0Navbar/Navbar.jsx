@@ -40,7 +40,7 @@ const Navbar = () => {
             </div>
             <div className="links">
                 <Link to="/" className='link'>Home</Link>
-                <Link to="/portfolio" className='link'>Portfolio</Link>
+                <Link to="/portfolio/all" className='link'>Portfolio</Link>
                 <Link to="/about" className='link'>About Us</Link>
                 <Link to="/contact" className='link contact'>Contact Us</Link>
                 <div className="iconBox" onClick={addClass} >

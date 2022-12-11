@@ -1,13 +1,17 @@
 import React from 'react'
-import Navbar from '../Components/0Navbar/Navbar'
-import Home from '../Components/1Home/Home'
 import Footer from '../Components/4Footer/Footer'
+import Portfolio from '../Components/7Portfolio/Portfolio'
+import Projects from '../Components/8aProjects/Projects'
 
 const PortfolioPage = () => {
   return (
     <div>
-        {/* <Navbar/> */}
-        <Home/>
+        <Portfolio/>
+        <div id="Projects">
+          <div className="container">
+            <Projects/>
+          </div>
+        </div>
         <Footer/>
     </div>
   )

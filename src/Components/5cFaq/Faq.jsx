@@ -50,7 +50,6 @@ const Faq = () => {
           y:0,scale:1,opacity:1,transition:{duration:1.0}
         })
       }
-      console.log("hi",inView);
     },[inView])
   return (
     <div>

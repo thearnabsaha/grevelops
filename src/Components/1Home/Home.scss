@@ -1,8 +1,7 @@
 @import "../../Styles/variables";
-
-  
 #Home{
-    height: 75vh;
+    padding: 2rem;
+    min-height: 80vh;
     background-color: $backgroundColor;
     padding-top: 15rem;
     .card{
@@ -82,7 +81,6 @@
                 }
             }
         }
-        padding-bottom: 35rem;
     }
 }
 @media(max-width:850px){
@@ -105,13 +103,10 @@
                 }
             }
         }
-        padding-bottom: 35rem;
     }
 }
 @media(max-width:670px){
     #Home{
-        height: 80vh;
-        padding-bottom: 27rem;
         .card{
             flex-direction: column-reverse;
             padding: 0;
@@ -133,8 +128,6 @@
 }
 @media(max-width:560px){
     #Home{
-        height: 80vh;
-        padding-bottom: 22rem;
         .card{
             flex-direction: column-reverse;
             padding: 0;
@@ -156,7 +149,6 @@
 }
 @media(max-width:470px){
     #Home{
-        height: 80vh;
         padding-top: 13rem;
         .card{
             flex-direction: column-reverse;
@@ -178,7 +170,6 @@
 }
 @media(max-width:420px){
     #Home{
-        height: 80vh;
         .card{
             flex-direction: column-reverse;
             padding: 0;
@@ -200,7 +191,6 @@
 }
 @media(max-width:400px){
     #Home{
-        height: 75vh;
         padding-top: 10rem;
         .card{
             flex-direction: column-reverse;
@@ -229,7 +219,6 @@
 }
 @media(max-width:340px){
     #Home{
-        height: 80vh;
         padding-top: 10rem;
         .card{
             flex-direction: column-reverse;
@@ -261,3 +250,7 @@
         }
     }
 }
+// @media(max-height:750px){
+//     #Home{
+//     }
+// }
