@@ -14,7 +14,7 @@ const Home = () => {
                 </div>
                 <motion.div className="img" initial={{y:-1000}} animate={{y:0}} transition={{delay:1.2,duration:1,type:"spring",stiffness:50}}>
                     <h1>
-                    <Typewriter options={{strings: ["We Are", "Grevelops.","Contact Us."],autoStart: true,loop: true,}}/>
+                    <Typewriter options={{strings: ["We Are Grevelops.","Contact Us."],autoStart: true,loop: true,}}/>
                     </h1>
                     {/* <h1>We Are Grevelops. Contact Us.</h1> */}
                     <motion.img src={laptop} alt="" initial={{zIndex:1}}/>
