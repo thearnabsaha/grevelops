@@ -68,7 +68,7 @@ const Process = () => {
     
   return (
     <div>
-        <div id="Process">
+        <div id="Process" className="gradient-bg-services">
             <div className="upper">
                 <img src={logo} alt="" />
                 <p>WE WORK HARD TO MAKE IT REAL!</p>
@@ -155,7 +155,7 @@ const Process = () => {
                 </div>
             </div>
         </div>
-        <div id="Processm">
+        <div id="Processm" className="gradient-bg-services">
             <div className="upper">
                 <img src={logo} alt="" />
                 <p>WE WORK HARD TO MAKE IT REAL!</p>

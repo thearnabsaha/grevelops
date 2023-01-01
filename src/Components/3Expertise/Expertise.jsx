@@ -51,7 +51,7 @@ const Expertise = () => {
   },[inView])
   return (
     <div>
-      <div id="Expertise">
+      <div id="Expertise" className="gradient-bg-transactions">
       <div className="upper">
       <img src={logo} alt="" />
         <h2>TECH. PASSION. IMPACT.</h2>

@@ -22,7 +22,7 @@ const Footer = () => {
     
   return (
     <div>
-        <div id="Footer">
+        <div id="Footer" className="gradient-bg-footer">
             <motion.div className="card" ref={ref} animate={animation}>
                 <div className="text">
                     <h1>Ready To Start Your Project?</h1>

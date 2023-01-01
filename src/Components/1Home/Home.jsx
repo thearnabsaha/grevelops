@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 const Home = () => {
   return (
     <div>
-        <div id="Home">
+        <div id="Home" className="gradient-bg-welcome">
             <motion.div className="card" initial={{x:-1000}} animate={{x:0}} transition={{delay:1,duration:1,type:"spring",stiffness:50}}>
                 <div className="text">
                     <h1>Hello, We're Grevelops.</h1>
