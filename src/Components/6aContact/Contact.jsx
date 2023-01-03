@@ -85,7 +85,7 @@ const Contact = () => {
                         </div>
                         <h3>Socials</h3>
                         <div className="as">
-                            <a href="#"><IoLogoLinkedin className='icona'/></a>
+                            <a href="https://www.linkedin.com/company/grevelops/"><IoLogoLinkedin className='icona'/></a>
                             <a href="https://www.instagram.com/grevelops/"><IoLogoInstagram className='icona'/></a>
                         </div>
                     </motion.div>

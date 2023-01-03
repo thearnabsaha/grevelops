@@ -41,7 +41,7 @@ const Footer = () => {
                     <a href="mailto:your@email.com?subject=Hello%20Arnab!">Email: arnab@grevelops.co</a>
                 </div>
                 <div className="socials">
-                    <a href="#"><IoLogoLinkedin className='icon'/></a>
+                    <a href="https://www.linkedin.com/company/grevelops/"><IoLogoLinkedin className='icon'/></a>
                     <a href="https://www.instagram.com/grevelops/"><IoLogoInstagram className='icon'/></a>
                 </div>
             </div>

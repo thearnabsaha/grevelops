@@ -1,7 +1,9 @@
 @import "../../Styles/variables";
 
 #Projects{
-    background-color: $backgroundColor;
+    background-color: $backgroundColorDark;
+    margin-bottom: 10rem;
+    margin-top: 1rem;
     .container{
         width: 80vw;
         margin: auto;
@@ -20,7 +22,7 @@
                 }
                 h1{
                     font-size: 1.3rem;
-                    color: $textblack;
+                    color: $colorWhite;
                     padding-left: .3rem;
                     padding-top: .5rem;
                 }
@@ -28,7 +30,7 @@
                     padding-top: .5rem;
                     padding-left: .3rem;
                     font-size: .8rem;
-                    color: $lightColorText;
+                    color: $colorWhite;
                     font-weight: 600;
                 }
                 button{

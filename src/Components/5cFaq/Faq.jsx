@@ -56,7 +56,7 @@ const Faq = () => {
         <div id="Faq">
             <div className="container">
                 <img src="" alt="" />
-                <h3>WE HAVE ALL THE ANSWES</h3>
+                <h3>WE HAVE ALL THE ANSWERS</h3>
                 <h1>Frequently Asked Questions</h1>
                 <motion.div className="box" ref={ref}>
                     <motion.div className="left" ref={ref} animate={animation}>
