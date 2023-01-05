@@ -1,7 +1,7 @@
 import React,{useEffect} from 'react'
 import { MdCall,MdEmail,MdSettings } from "react-icons/md";
 import "./Contact.scss"
-import { IoLogoLinkedin,IoLogoInstagram } from "react-icons/io";
+import { IoLogoLinkedin,IoLogoInstagram, IoLogoTwitter } from "react-icons/io";
 
 import { useAnimation,motion} from "framer-motion";
 import { useInView } from 'react-intersection-observer';
@@ -73,7 +73,7 @@ const Contact = () => {
                             <div className="l4"></div>
                         </div>
                         <h3>Email</h3>
-                        <p>Email: <a href="mailto:your@email.com?subject=Hello%20Arnab!">arnab@grevelops.co</a></p>
+                        <p>Email: <a href="mailto:your@email.com?subject=Hello%20Arnab!">contact@grevelops.co</a></p>
                     </motion.div>
                     <motion.div className="card carda" ref={ref} animate={animation2}>
                         <div className="imgw">
@@ -85,8 +85,9 @@ const Contact = () => {
                         </div>
                         <h3>Socials</h3>
                         <div className="as">
-                            <a href="https://www.linkedin.com/company/grevelops/"><IoLogoLinkedin className='icona'/></a>
-                            <a href="https://www.instagram.com/grevelops/"><IoLogoInstagram className='icona'/></a>
+                        <a href="https://twitter.com/grevelops" aria-label="Our link to Twitter"><IoLogoTwitter className='icona'/></a>
+                        <a href="https://www.linkedin.com/company/grevelops/" aria-label="Our link to LinkedIn"><IoLogoLinkedin className='icona'/></a>
+                        <a href="https://www.instagram.com/grevelops/" aria-label="Our link to Instagram"><IoLogoInstagram className='icona'/></a>
                         </div>
                     </motion.div>
                 </motion.div>

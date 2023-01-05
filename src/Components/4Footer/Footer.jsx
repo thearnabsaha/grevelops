@@ -1,6 +1,6 @@
 import React,{useEffect} from 'react'
 import logo from '../../Assets/logo.png'
-import { IoLogoLinkedin,IoLogoInstagram } from "react-icons/io";
+import { IoLogoLinkedin,IoLogoInstagram, IoLogoTwitter } from "react-icons/io";
 import "./Footer.scss"
 import { useAnimation,motion} from "framer-motion";
 import { useInView } from 'react-intersection-observer';
@@ -30,7 +30,7 @@ const Footer = () => {
                 </div>
                 <a href="https://api.whatsapp.com/send?phone=916296818891">Get In Touch</a>
             </motion.div>
-            <img src={logo} alt="" />
+            {/* <img src={logo} alt="" /> */}
             <div className="upper">
                 <div className="call">
                     <h1>CALL US</h1>
@@ -38,11 +38,12 @@ const Footer = () => {
                 </div>
                 <div className="write">
                     <h1>WRITE US</h1>
-                    <a href="mailto:your@email.com?subject=Hello%20Arnab!">Email: arnab@grevelops.co</a>
+                    <a href="mailto:your@email.com?subject=Hello%20Arnab!">Email: contact@grevelops.co</a>
                 </div>
                 <div className="socials">
-                    <a href="https://www.linkedin.com/company/grevelops/"><IoLogoLinkedin className='icon'/></a>
-                    <a href="https://www.instagram.com/grevelops/"><IoLogoInstagram className='icon'/></a>
+                    <a href="https://twitter.com/grevelops" aria-label="Our link to Twitter"><IoLogoTwitter className='icon'/></a>
+                    <a href="https://www.linkedin.com/company/grevelops/" aria-label="Our link to LinkedIn"><IoLogoLinkedin className='icon'/></a>
+                    <a href="https://www.instagram.com/grevelops/" aria-label="Our link to Instagram"><IoLogoInstagram className='icon'/></a>
                 </div>
             </div>
             <div className="lower">
