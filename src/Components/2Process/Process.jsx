@@ -1,9 +1,9 @@
 import React,{useEffect} from 'react'
-import logo from '../../Assets/logo.png'
-import a from '../../Assets/a.jpg'
-import b from '../../Assets/b.jpg'
-import c from '../../Assets/c.jpg'
-import d from '../../Assets/d.jpg'
+import logo from '../../Assets/logo.webp'
+import a from '../../Assets/a.webp'
+import b from '../../Assets/b.webp'
+import c from '../../Assets/c.webp'
+import d from '../../Assets/d.webp'
 import "./Process.scss"
 import { useAnimation,motion} from "framer-motion";
 import { useInView } from 'react-intersection-observer';

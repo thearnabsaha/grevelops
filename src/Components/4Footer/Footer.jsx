@@ -1,5 +1,4 @@
 import React,{useEffect} from 'react'
-import logo from '../../Assets/logo.png'
 import { IoLogoLinkedin,IoLogoInstagram, IoLogoTwitter } from "react-icons/io";
 import "./Footer.scss"
 import { useAnimation,motion} from "framer-motion";

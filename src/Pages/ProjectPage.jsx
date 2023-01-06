@@ -1,7 +1,7 @@
 import React from 'react'
-import {Link ,useParams} from 'react-router-dom'
+import {useParams} from 'react-router-dom'
 import Footer from '../Components/4Footer/Footer';
-import a from '../Assets/a.jpg';
+import a from '../Assets/a.webp';
 const ProjectPage = () => {
     const {id} = useParams();
     var arr=[

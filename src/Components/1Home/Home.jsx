@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Home.scss"
-import laptop from '../../Assets/laptop.png'
+import laptop from '../../Assets/laptop.webp'
 import Typewriter from 'typewriter-effect';
 import { motion } from "framer-motion"
 const Home = () => {

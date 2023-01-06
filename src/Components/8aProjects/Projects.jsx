@@ -1,10 +1,10 @@
 import React from 'react'
 import Card from './Card';
 import "./Projects.scss"
-import a from '../../Assets/a.jpg';
-import b from '../../Assets/b.jpg';
-import c from '../../Assets/c.jpg';
-import d from '../../Assets/d.jpg';
+import a from '../../Assets/a.webp';
+import b from '../../Assets/b.webp';
+import c from '../../Assets/c.webp';
+import d from '../../Assets/d.webp';
 
 const Projects = () => {
     var arr=[

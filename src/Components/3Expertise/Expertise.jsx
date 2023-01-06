@@ -1,5 +1,5 @@
 import React,{useEffect} from 'react'
-import logo from '../../Assets/logo.png'
+import logo from '../../Assets/logo.webp'
 import { BsLaptop,BsPhone } from "react-icons/bs";
 import {GiPencilBrush,GiCrossedChains,GiBrain } from "react-icons/gi";
 import "./Expertise.scss"

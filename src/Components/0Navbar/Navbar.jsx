@@ -1,6 +1,6 @@
-import React,{useState,useRef,useEffect}from 'react'
+import React,{useState}from 'react'
 import {Link} from 'react-router-dom'
-import logo from '../../Assets/logo.png'
+import logo from '../../Assets/logo.webp'
 import "./Navbar.scss"
 import { GoThreeBars } from "react-icons/go";
 const Navbar = () => {
