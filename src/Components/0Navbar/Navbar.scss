@@ -51,6 +51,10 @@
         }
     }
 }
+.iconf{
+    font-size: 2rem;
+    display: none;
+}
 .fixed{
     transition: .3s all ease-in-out;
     display: flex;
@@ -146,6 +150,7 @@
             padding-top: 1.5rem;
             text-decoration: none;
             font-size: 1.5rem;
+            color: $darkGrey;
         }
     }
 }
@@ -162,5 +167,9 @@
                 fill: $textblack;
             }
         }
+    }
+    .iconf{
+        font-size: 2rem;
+        display: block;
     }
 }
