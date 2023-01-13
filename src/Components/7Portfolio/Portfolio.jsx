@@ -22,7 +22,7 @@ const Portfolio = () => {
                 </div>
               </div>
             <div className="container" >
-              <motion.div className="links"  initial={{x:-1500,y:0}} animate={{x:0,y:0}} transition={{delay:1,duration:2,type:"spring",stiffness:120}}>
+              <motion.div className="links"  initial={{x:-1500,y:0}} animate={{x:0,y:0}} transition={{duration:2,type:"spring",stiffness:120}}>
                   <Link to="/portfolio/all" className='linkp'>All</Link>
                   <Link to="/portfolio/websites" className='linkp'>Websites</Link>
                   <Link to="/portfolio/apps" className='linkp'>Apps</Link>
