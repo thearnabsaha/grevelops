@@ -11,7 +11,7 @@ const Projects = () => {
                 <div className="cards">
               {      arr.map((e)=>{
                         return(
-                            <div key={e.id}>
+                            <div key={e.id} className="pcard">
                                 <Card title={e.title} desc={e.desc} img={e.img} id={e.id}/>
                             </div>
                         )

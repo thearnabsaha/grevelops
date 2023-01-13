@@ -26,7 +26,7 @@
             }
             p{
                 font-weight: 300;
-                width: 25vw;
+                width: 350px;
                 padding-top: .5rem;
                 color: $colorWhite;
             }
@@ -43,7 +43,7 @@
             background-color: $backgroundColor;
             padding: 1rem;
             border-radius: .6rem;
-            .link{
+            .linkp{
                 text-decoration: none;
                 padding: 1rem;
                 color: $colorWhite;
@@ -51,6 +51,35 @@
                 &:hover{
                     border-bottom: 2px solid $backgroundColorDark;
                     padding-bottom: .5rem;
+                }
+            }
+        }
+    }
+}
+@media(max-width:420px){
+    #Portfolio{
+        .container{
+            .links{
+                width: 90%;
+            }
+        }
+    }
+}
+@media(max-width:350px){
+    #Portfolio{
+        .hero{
+            .box{
+                p{
+                    width: 300px;
+                }
+            }
+        }
+    }
+    #Portfolio{
+        .container{
+            .links{
+                .linkp{
+                    padding: .5rem;
                 }
             }
         }

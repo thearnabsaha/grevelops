@@ -46,7 +46,7 @@ var arr=[
     },
     {
         id:6,
-        img:a,
+        img:c,
         title:"ReLation App",
         cat:"app",
         desc:"It's a dating app where we carefully make matches. We are here to make our generation best by giving them their best partners. Now we are just making best matches but gradually our app will provide many more advanced advantages that are not given by any other dating apps.",

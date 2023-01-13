@@ -14,9 +14,9 @@ const Portfolio = () => {
               </div>
             <div className="container">
               <div className="links">
-                  <Link to="/portfolio/all" className='link'>All</Link>
-                  <Link to="/portfolio/websites" className='link'>Websites</Link>
-                  <Link to="/portfolio/apps" className='link'>Apps</Link>
+                  <Link to="/portfolio/all" className='linkp'>All</Link>
+                  <Link to="/portfolio/websites" className='linkp'>Websites</Link>
+                  <Link to="/portfolio/apps" className='linkp'>Apps</Link>
               </div>
             </div>
         </div>

@@ -61,19 +61,6 @@ const Navbar = () => {
 
   return (
     <div className='a'>
-        <div className={open?"close mNav":"open mNav"}>
-          <div className="logo">
-              <img src={logo} alt="" />
-              <h1>Grevelops</h1>
-          </div>
-          <hr />
-          <div className="linkas">
-            <Link to="/" className='link'>Home</Link>
-            <Link to="/portfolio" className='link'>Portfolio</Link>
-            <Link to="/about" className='link'>About</Link>
-            <Link to="/contact" className='link'>Contact</Link>
-          </div>
-        </div>
         <div id="Navbar" className={sticky?"sticky":"fixed"}>
             <div className="logo">
                 <img src={logo} alt="" />
@@ -85,7 +72,6 @@ const Navbar = () => {
                 <Link to="/about" className='link'>About Us</Link>
                 <Link to="/contact" className='link contact'>Contact Us</Link>
                 <div className="iconBox" onClick={addClass} >
-                  {/* <GoThreeBars className='icon'/> */}
                 </div>
                 {["left"].map((anchor) => (
         <React.Fragment key={anchor}>
