@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 import "./Portfolio.scss"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { motion } from "framer-motion"
 const Portfolio = () => {
   useEffect(() => {
     AOS.init({      offset: 200,
@@ -21,11 +22,11 @@ const Portfolio = () => {
                 </div>
               </div>
             <div className="container" >
-              <div className="links" >
+              <motion.div className="links"  initial={{x:-1500,y:0}} animate={{x:0,y:0}} transition={{delay:1,duration:2,type:"spring",stiffness:120}}>
                   <Link to="/portfolio/all" className='linkp'>All</Link>
                   <Link to="/portfolio/websites" className='linkp'>Websites</Link>
                   <Link to="/portfolio/apps" className='linkp'>Apps</Link>
-              </div>
+              </motion.div>
             </div>
         </div>
     </div>

@@ -6,7 +6,7 @@ const Card = (props) => {
 
   useEffect(() => {
     AOS.init({      offset: 200,
-        duration: 600,
+        duration: 500,
         easing: 'ease-in-out',
         });
   }, [])
