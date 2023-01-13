@@ -20,6 +20,7 @@
                     object-fit: cover;
                     object-position: top;
                     transition: all 3s ease-in-out;
+                    box-shadow: 0px 0px 10px 0px rgba(170, 170, 170, 0.613);
                     &:hover{
                         object-position: bottom;
                     }
@@ -62,7 +63,5 @@
 }
 #shadow{
     box-shadow: 0px 5px 10px 5px rgba(67, 67, 67, 0.486);
-    // border: 1px solid red;
-    // background-color: $colorWhite;
     height: 10px;
 }

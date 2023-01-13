@@ -4,12 +4,14 @@ import "./Projects.scss"
 import arr from '../../Apis/project'
 
 const ProjectsWeb = () => {
+    var arr1=arr.filter(e=>e.cat==="web")
+    console.log(arr1);
   return (
     <div>
         <div id="Projects">
             <div className="container">
                 <div className="cards">
-              {      arr.map((e)=>{
+              {      arr1.map((e)=>{
                         return(
                             <div key={e.id}>
                                 <Card title={e.title} desc={e.desc} img={e.img} id={e.id}/>
