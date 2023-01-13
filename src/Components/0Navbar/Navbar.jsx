@@ -5,7 +5,7 @@ import "./Navbar.scss"
 import { GoThreeBars } from "react-icons/go";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
-
+import { motion } from "framer-motion"
 const Navbar = () => {
   const [sticky, setSticky] = useState(false)
   const [open, setOpen] = useState(false)
@@ -61,7 +61,7 @@ const Navbar = () => {
 
   return (
     <div className='a'>
-        <div id="Navbar" className={sticky?"sticky":"fixed"}>
+        <motion.div id="Navbar" className={sticky?"sticky":"fixed"}  initial={{x:0,y:-150}} animate={{x:0,y:0}} transition={{duration:1,type:"spring",stiffness:120}} >
             <div className="logo">
                 <img src={logo} alt="" />
                 <h1>Grevelops</h1>
@@ -86,7 +86,7 @@ const Navbar = () => {
         </React.Fragment>
       ))}
             </div>
-        </div>
+        </motion.div>
     </div>
   )
 }
