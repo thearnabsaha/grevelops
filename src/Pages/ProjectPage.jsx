@@ -1,33 +1,13 @@
 import React from 'react'
 import {useParams} from 'react-router-dom'
 import Footer from '../Components/4Footer/Footer';
-import a from '../Assets/a.webp';
+
+import arr from '../Apis/project'
 const ProjectPage = () => {
     const {id} = useParams();
-    var arr=[
-        {   
-            id:1,
-            title:"My First Project",
-            desc:"Create a free online store with a product catalog and start selling on WhatsApp.",
-            tech:[{lang:"HTMl"},{lang:"HTMl"},{lang:"HTMl"},{lang:"HTMl"},{lang:"HTMl"},{lang:"HTMl"},]
-        },
-        {
-            id:2,
-            title:"My First Project",
-            desc:"Create a free online store with a product catalog and start selling on WhatsApp.",
-        },
-        {
-            id:3,
-            title:"My First Project",
-            desc:"Create a free online store with a product catalog and start selling on WhatsApp.",
-        },
-        {
-            id:4,
-            title:"My First Project",
-            desc:"Create a free online store with a product catalog and start selling on WhatsApp.",
-        },
-    ]
-    var arr1=[arr[id]]
+
+    var arr1=[arr[id-1]]
+    console.log(arr1);
   return (
     <div id='pp'>
         {
@@ -39,7 +19,7 @@ const ProjectPage = () => {
                                 <h1>Project Review</h1>
                                 <div className="box">
                                     <div className="imgBox">
-                                        <img src={a} alt="" />
+                                        <img src={e.img} alt="" />
                                     </div>
                                     <div className="smBox">
                                         <div className="about">
@@ -50,9 +30,16 @@ const ProjectPage = () => {
                                         <div className="technology">
                                             <h2>Technology</h2>
                                             <ul>
+                                                {/* <li>Html</li>
                                                 <li>Html</li>
-                                                <li>Html</li>
-                                                <li>Html</li>
+                                                <li>Html</li> */}
+                                                {
+                                                    e.tech.map((e)=>{
+                                                        return(
+                                                            <li>{e.lang}</li>
+                                                        )
+                                                    })
+                                                }
                                             </ul>
                                         </div>
                                         <a href="https://api.whatsapp.com/send?phone=916296818891">Get In Touch</a>

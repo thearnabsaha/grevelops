@@ -2,12 +2,10 @@
 
 #Projects{
     background-color: $backgroundColorDark;
-    margin-bottom: 10rem;
-    margin-top: 1rem;
+    margin-bottom: 7rem;
     .container{
-        width: 80vw;
-        margin: auto;
-        padding-bottom: 4rem;
+        // width: 80vw;
+        // margin: auto;
         .cards{
             display: flex;
             flex-wrap: wrap;
@@ -19,6 +17,12 @@
                     height: 250px;
                     border-radius: .6rem;
                     width: 400px;
+                    object-fit: cover;
+                    object-position: top;
+                    transition: all 3s ease-in-out;
+                    &:hover{
+                        object-position: bottom;
+                    }
                 }
                 h1{
                     font-size: 1.3rem;
@@ -31,7 +35,7 @@
                     padding-left: .3rem;
                     font-size: .8rem;
                     color: $colorWhite;
-                    font-weight: 600;
+                    font-weight: 300;
                 }
                 button{
                     background-color: $primaryColor;
@@ -42,9 +46,10 @@
                     outline: none;
                     transition: all .3s ease-in-out;
                     margin-left: .3rem;
+                    margin-top: 1rem;
                     &:hover{
                         background-color: #0462a9;
-
+                        
                     }
                     .link{
                         color: $colorWhite;
@@ -54,4 +59,10 @@
             }
         }
     }
+}
+#shadow{
+    box-shadow: 0px 5px 10px 5px rgba(67, 67, 67, 0.486);
+    // border: 1px solid red;
+    // background-color: $colorWhite;
+    height: 10px;
 }

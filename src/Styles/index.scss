@@ -27,10 +27,8 @@ font-family: Rubik,-apple-system,system-ui,BlinkMacSystemFont,segoe ui,Roboto,Ox
     display: none;
 }
 #pp{
-    // border: 1px solid red;
     #ProjectReview{
         .container{
-            height: 100vh;
             padding-top: 8rem;
             width: 70vw;
             margin: auto;
@@ -42,6 +40,7 @@ font-family: Rubik,-apple-system,system-ui,BlinkMacSystemFont,segoe ui,Roboto,Ox
                 margin-top: 1rem;
                 display: flex;
                 justify-content: space-between;
+                margin-bottom: 10rem;
                 .imgBox{
                     img{
                         width: 600px;

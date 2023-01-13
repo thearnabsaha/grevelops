@@ -5,6 +5,13 @@ const Portfolio = () => {
   return (
     <div>
         <div id="Portfolio">
+              <div className="hero">
+                <div className="box">
+                  <h3>Our Works</h3>
+                  <h2>Portfolio Section</h2>
+                  <p>“Find all our work with happy and satisfied clients here”</p>
+                </div>
+              </div>
             <div className="container">
               <div className="links">
                   <Link to="/portfolio/all" className='link'>All</Link>
