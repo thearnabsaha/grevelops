@@ -1,13 +1,18 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import {Link} from 'react-router-dom'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Card = (props) => {
-  const handleClick=()=>{
-    // console.log("arnab");
-  }
+
+  useEffect(() => {
+    AOS.init({      offset: 200,
+        duration: 600,
+        easing: 'ease-in-out',
+        });
+  }, [])
   return (
     <div>
-        <div className="cardp" onClick={handleClick}>
+        <div className="cardp" data-aos="zoom-in-up">
                         <img src={props.img} alt="" />
                         <h1>{props.title}</h1>
                         <p>{props.desc}</p>

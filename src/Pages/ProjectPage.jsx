@@ -1,10 +1,18 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import {useParams} from 'react-router-dom'
 import Footer from '../Components/4Footer/Footer';
 
 import arr from '../Apis/project'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const ProjectPage = () => {
     const {id} = useParams();
+    useEffect(() => {
+        AOS.init({      offset: 200,
+            duration: 600,
+            easing: 'ease-in-out',
+            });
+      }, [])
 
     var arr1=[arr[id-1]]
     console.log(arr1);
@@ -18,10 +26,10 @@ const ProjectPage = () => {
                             <div className="container">
                                 <h1>Project Review</h1>
                                 <div className="box">
-                                    <div className="imgBox">
+                                    <div className="imgBox" data-aos="fade-right">
                                         <img src={e.img} alt="" />
                                     </div>
-                                    <div className="smBox">
+                                    <div className="smBox" data-aos="fade-left">
                                         <div className="about">
                                             <h2>About</h2>
                                             <h3>{e.title}</h3>
