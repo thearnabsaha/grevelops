@@ -1,8 +1,8 @@
-import a from '../Assets/a.png';
-import b from '../Assets/b.png';
-import c from '../Assets/c.png';
-import d from '../Assets/d.png';
-import e from '../Assets/e.png';
+import a from '../Assets/pa.webp';
+import b from '../Assets/pb.webp';
+import c from '../Assets/pc.webp';
+import d from '../Assets/pd.webp';
+import e from '../Assets/pe.webp';
 var arr=[
     {   
         id:1,
